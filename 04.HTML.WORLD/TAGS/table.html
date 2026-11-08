@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Combined Table</title>
+</head>
+<body>
+ 
+<table border="1">
+  <!-- caption: table ka title (hamesha <table> ke turant baad) -->
+  <caption>STUDENT REPORT</caption>
+ 
+  <thead>
+    <!-- colspan: ek heading 5 columns me failegi -->
+    <tr>
+      <th colspan="5" align="center">STUDENT DETAILS</th>
+    </tr>
+    <tr>
+      <th align="center">Name</th>
+      <th align="center">Age</th>
+      <th align="center">Course</th>
+      <th align="center">Subject</th>
+      <th align="center">Marks</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <!-- rowspan: Aditya ki details 2 rows me failengi -->
+    <tr>
+      <td rowspan="2" align="center">Aditya</td>
+      <td rowspan="2" align="center">18</td>
+      <td rowspan="2" align="center">BTech</td>
+      <td align="center">Math</td>
+      <td align="center">85</td>
+    </tr>
+    <tr>
+      <td align="center">Physics</td>
+      <td align="center">90</td>
+    </tr>
+    <tr>
+      <td align="center">Rahul</td>
+      <td align="center">19</td>
+      <td align="center">BCA</td>
+      <td align="center">Math</td>
+      <td align="center">80</td>
+    </tr>
+  </tbody>
+ 
+  <tfoot>
+    <!-- tfoot + colspan: Total row -->
+    <tr>
+      <td align="center" colspan="4">Total</td>
+      <td align="center">255</td>
+    </tr>
+  </tfoot>
+</table>
+ 
+</body>
+</html>
+ 
+<!-- 2-->
+<table border="1">
+    <caption><h2>NIU – Weekly Class Timetable</h2>
+    <small>Monday to Friday</small>
+    </caption>
+    <thead>
+        <tr>
+            <th align="center">Day</th>
+            <th align="center">9–10</th>
+            <th align="center">10–11</th>
+            <th align="center">11–12</th>
+            <th align="center">12–1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td align="center">Monday</td>
+        <td align="center">Maths</td>
+        <td align="center">Physics</td>
+        <td align="center" rowspan="5">Break</td>
+        <td align="center">Python</td>
+    </tr>
+
+    <tr>
+        <td align="center">Tuesday</td>
+        <td align="center">Python</td>
+        <td align="center">Maths</td>
+        <td align="center">English</td>
+    </tr>
+
+    <tr>
+        <td align="center">Wednesday</td>
+        <td align="center">Physics</td>
+        <td align="center">Python</td>
+        <td align="center">Maths</td>
+    </tr>
+
+    <tr>
+        <td align="center">Thursday</td>
+        <td align="center">Maths</td>
+        <td align="center">English</td>
+        <td align="center">Physics</td>
+    </tr>
+
+    <tr>
+        <td align="center">Friday</td>
+        <td align="center">Python</td>
+        <td align="center">Physics</td>
+        <td align="center">Maths</td>
+    </tr>
+    
+    </tbody>
+</table>

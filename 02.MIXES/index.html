@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- html: poore page ka root, lang="en" = page English me hai -->
+<html lang="en">
+
+<!-- head: page ki hidden info, screen par nahi dikhti -->
+<head>
+  <meta charset="UTF-8"> <!-- UTF-8: saare akshar sahi dikhte hain -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mobile par sahi fit -->
+  <title>Document</title> <!-- title: browser ke tab me dikhta hai -->
+</head>
+
+<!-- body: jo kuch screen par dikhna hai, wo yahan likhte hain -->
+<body>
+
+<!-- ========== 1. HEADINGS ========== -->
+<!-- h1 sabse bada aur important, h6 sabse chhota -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<hr> <!-- hr: horizontal line, do sections alag karne ke liye -->
+
+
+<!-- ========== 2. TEXT ========== -->
+<!-- p: paragraph -->
+<p>helo kaho ka hal ba thik ba nu ho batao</p>
+
+<!-- b: bold, i: italic, u: underline -->
+<p><b>bold</b> <i>italic</i> <u>underline</u></p>
+
+<!-- sub: neeche chhota (H2O), sup: upar chhota (power) -->
+<p>H<sub>2</sub>O</p>
+<p>a<sup>m</sup> * a<sup>n</sup> = a<sup>m+n</sup></p>
+
+<!-- pre: jaisa likhoge waisa dikhega (spaces aur enter bhi) -->
+<pre>
+Lorem        ipsum dolor sit,
+amet consectetur adipisicing elit.
+</pre>
+
+<!-- br: nayi line (closing tag nahi hota) -->
+Pehli line<br>Doosri line
+
+<hr>
+
+<!-- ========== 3. LINKS ========== -->
+<!-- a: link banata hai, href me address likhte hain -->
+<a href="https://youtu.be/R-4cvbrDbv8?si=PlDRQGLjIvgvU5rg">song</a>
+
+<!-- relative link: apni hi site ke page par jaane ke liye -->
+<a href="/02.MIXES/index.2.html">relative link</a>
+
+<!-- target="_blank": link naye tab me khulta hai -->
+<a href="https://google.com" target="_blank">Google</a>
+
+<!-- image ke andar link: image par click karne se link khulta hai -->
+<a href="https://github.com/ujalaffg-tech/code-notes" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="100" alt="repo link"> </a>
+
+<hr>
+
+<!-- ========== 4. IMAGES ========== -->
+<img src="/03.IMAGES/aaa.jpeg" alt="my img" height="150">
+
+<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="my img" height="150">
+
+<hr>
+
+<!-- ========== 5. LAYOUT (page ka dhancha) ========== -->
+<!-- header = upar | main = beech | footer = neeche -->
+
+<!-- header: upar ka hissa (title, menu) -->
+<header>
+  <h2>Meri Website</h2>
+  <!-- nav: menu ke links -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<!-- main: page ka asli content -->
+<main>
+  <!-- section: content ka ek hissa -->
+  <section>
+    <h3>Latest News</h3>
+    <!-- article: alag se poori cheez (news/blog) -->
+    <article>
+      <h4>Pehli News</h4>
+      <p>Is news ka content...</p>
+    </article>
+  </section>
+
+  <!-- aside: side ka extra content -->
+  <aside>
+    <p>Related links yahan</p>
+  </aside>
+</main>
+
+<!-- footer: neeche ka hissa (copyright, contact) -->
+<footer>
+  <p>&copy; 2026 Meri Website</p>
+</footer>
+
+<hr>
+
+
+
+<hr>
+
+
+<!-- ========== 7. TABLE ========== -->
+<table border="1">
+        <thead>
+
+          <tr>
+            <th colspan="3">Goa Trip Plan</th>
+          </tr>
+
+          <tr>
+            <th align="center">Jagah</th>
+            <th align="center">Din</th>
+            <th align="center">Kharcha</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          <tr>
+            <td align="center">Baga Beach</td>
+            <td align="center">1</td>
+            <td align="center">2000</td>
+          </tr>
+
+          <tr>
+            <td align="center">Fort Aguada</td>
+            <td align="center">1</td>
+            <td align="center">1500</td>
+          </tr>
+
+          <tr>
+            <td align="center">Anjuna Market</td>
+            <td align="center">1</td>
+            <td align="center">1800</td>
+          </tr>
+
+          <tr>
+            <td align="center">Dudhsagar Falls</td>
+            <td align="center">1</td>
+            <td align="center">2500</td>
+          </tr>
+        </tbody>
+      </table>
+
+<!-- ========== 8. FORM ========== -->
+<!-- form: sab inputs ko jodta hai, action = submit par data kahan jaayega -->
+<!-- name = kis cheez ka data, value = data kya hai (ye server ko jaata hai) -->
+<h4>Registration Form</h4>
+<form action="/action.php">
+
+  <!-- text: ek line ka box, placeholder = halka hint -->
+  <input type="text" name="username" placeholder="username">
+  <br>
+
+  <!-- password: likhte waqt akshar chhup jaate hain -->
+  <input type="password" name="password" placeholder="password">
+
+  <!-- radio: sirf ek chun sakte hain, same name se group banta hai -->
+  <!-- label ke andar input rakha: text par click se bhi select hota hai -->
+  <h5>Select Your Class</h5>
+  <label><input type="radio" name="class" value="XI"> classXI</label>
+  <br>
+  <label><input type="radio" name="class" value="XII"> classXII</label>
+
+  <!-- checkbox: ek se zyada chun sakte hain -->
+  <h5>Choose Your Fav Subject</h5>
+  <label><input type="checkbox" name="sub" value="math"> math</label><br>
+  <label><input type="checkbox" name="sub" value="physics"> physics</label><br>
+  <label><input type="checkbox" name="sub" value="chemistry"> chemistry</label><br>
+  <label><input type="checkbox" name="sub" value="cs"> Computer Science</label>
+
+  <!-- select: dropdown, option: ek choice -->
+  <h5>Select Your City</h5>
+  <select name="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Patna">Patna</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="GR.Noida">GR.Noida</option>
+  </select>
+
+  <!-- textarea: lamba text (feedback), andar kuch mat likho -->
+  <h5>Feedback</h5>
+  <textarea name="feedback" rows="5" cols="30" placeholder="Please give your valuable feedback here"></textarea>
+  <br><br>
+
+  <!-- button: submit dabane par form ka data jaata hai -->
+  <button type="submit">Submit</button>
+</form>
+
+    <hr> <!-- hr: form aur neeche ke embed section ko alag karne ke liye line -->
+
+
+    <!-- ========== 9. IFRAME (dusri cheez page ke andar dikhana) ========== -->
+    <!-- iframe: ek page ke andar doosra page ya video dikhata hai -->
+
+    <!-- YouTube iframe: video seedha apne page me chalta hai -->
+    <!-- src = YouTube embed ka address, width/height = box ka size (px me) -->
+    <!-- title = screen reader ke liye naam, frameborder="0" = border nahi -->
+    <!-- allow = video ko kya-kya karne ki permission hai (autoplay, fullscreen, etc.) -->
+    <!-- referrerpolicy = kaun si site se aaye, ye info kitni bhejni hai -->
+    <!-- allowfullscreen = video ko full screen karne ka button chalega -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=Jn4kLoyYxchWEFYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr> <!-- hr: do iframe ke beech line -->
+
+    <!-- Wikipedia iframe: poori website ka page ek chhote box me dikhata hai -->
+    <!-- src = jis page ko dikhana hai uska address, width/height = box ka size -->
+    <iframe src="https://en.m.wikipedia.org/wiki/Main_Page" width="600" height="400"></iframe>
+
+    <hr> <!-- hr: iframe aur video ke beech line -->
+
+
+    <!-- ========== 10. VIDEO ========== -->
+    <!-- video: apni file wali video page par chalata hai -->
+    <!-- src = video file ka address (/ se shuru = site ke root folder se) -->
+    <!-- height/width = video ka size, controls = play/pause/volume ke buttons -->
+    <!-- loop = video khatam hone par dobara shuru -->
+    <!-- autoplay = page khulte hi chalne lage, muted = awaaz band (autoplay ke liye zaroori) -->
+    <!-- tag ke andar ka text "video" tab dikhega jab browser video support na kare -->
+    <video height="700" width="1700" src="/03.IMAGES/adiiiz.mp4" controls loop autoplay muted >video</video>
+
+    <hr> <!-- hr: video aur download button ke beech line -->
+
+
+    <!-- ========== 11. DOWNLOAD ========== -->
+    <!-- a ke andar button: button dabane par link kaam karta hai -->
+    <!-- href = file ka address (../ = ek folder bahar jaakar), download = file khulne ki jagah download hogi -->
+    <a 
+      href="../03.IMAGES/adiiiz.mp4" download>
+      <button>Download Video</button> <!-- button: screen par dikhne wala Download Video ka button -->
+    </a>
+</body> <!-- body band: yahan screen ka content khatam -->
+</html> <!-- html band: yahan poora page khatam -->
