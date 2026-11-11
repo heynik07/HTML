@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- EXTERNAL LINK:
+     Apni website se kisi doosri website par jaana.
+     Example: Google, YouTube, GitHub.
+     Usually External Link mein ABSOLUTE URL use hota hai,
+     kyunki doosri website ka complete address dena hota hai. -->
+
+    <!-- INTERNAL LINK:
+     Apni website ke ek page se doosre page par jaana.
+     Example: index.html se about.html.
+     Usually Internal Link mein RELATIVE URL use hota hai,
+     kyunki apni website ki file ka path dena hota hai. -->
+
+    <!-- ABSOLUTE URL:
+     Kisi resource ka complete web address.
+     Isme protocol (https://) aur domain name hota hai.
+     Example: https://www.google.com/ -->
+
+    <!-- RELATIVE URL:
+     Current HTML file ki location ke according
+     doosri file ya resource ka path dena.
+     Example: about.html 
+     Lekin ye fixed rule nahi hai.
+     Internal link mein bhi Absolute URL use kar sakte hain.-->
+
+    <!-- SAME FOLDER:
+     Agar dono HTML files same folder mein hain,
+     toh sirf filename likhna kaafi hai.
+     Example: about.html -->
+
+    <!-- .1 Full URL -->
+    <p><a href="https://en.wikipedia.org/wiki/WWE">Full URL</a></p>
+    <pre>Protocol : https://
+     Domain   : en.wikipedia.org
+     Path     : /wiki/WWE 
+     Khula: WWE ka khaas page. Isme protocol, domain aur path teeno hain.</pre>
+ 
+    <!-- .2 Path Changed -->
+    <p><a href="https://en.wikipedia.org/wiki/All_Elite_Wrestling">Path Changed</a></p>
+    <pre>Protocol : https://
+     Domain   : en.wikipedia.org
+     Path     : /wiki/All_Elite_Wrestling
+     Khula: AEW ka page. Pichle link se sirf path badla, protocol aur domain same hain.</pre>
+ 
+    <!-- .3 Only Domain -->
+    <p><a href="https://en.wikipedia.org">Only Domain</a></p>
+    <pre>Protocol : https://
+     Domain   : en.wikipedia.org
+     Path     : nahi hai (HATA DIYA)
+     Khula: Wikipedia ka home page. Path hata diya, isliye khaas page ki jagah home page.</pre>
+ 
+    <!-- .4 Different website (poora alag domain) -->
+    <p><a href="https://www.youtube.com">Another Website</a></p>
+    <pre> Protocol : https://
+     Domain   : www.youtube.com
+     Path     : nahi hai
+     Khula: YouTube ka home page. Domain bilkul alag hai.</pre>
+ 
+     <!-- .5 Asli No Protocol (galat link)-->
+     <p><a href="en.wikipedia.org/wiki/WWE">No Protocol</a></p>
+    <pre>Protocol : nahi hai
+     Domain   : en.wikipedia.org
+     Path     : /wiki/WWE
+     Browser ise apne folder ki file samajhta hai, isliye error aata hai Error aaya: protocol nahi tha, to browser ne ise mere folder ki file samjha, wo file mili nahi.</pre>
+
+     <!-- .6 Protocol-relative URL (// se shuru) -->
+     <p><a href="//en.wikipedia.org/wiki/WWE">Protocol-relative (//)</a></p>
+    <pre>Protocol : nahi likha, par // hai, isliye browser apne page wala protocol laga deta hai
+     Domain   : en.wikipedia.org
+     Path     : /wiki/WWE
+     Ye Live Server par chal jata hai, par practice me hamesha https:// likho 
+     Khula: WWE ka page. Browser ne protocol apne aap laga diya, isliye error nahi aaya.</pre>
+ 
+
+</body>
+</html>
